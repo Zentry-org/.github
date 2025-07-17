@@ -121,7 +121,7 @@ We welcome your contributions!
 # Fork the repo, make changes and submit a PR 🚀
 ```
 
-Please check [CONTRIBUTING.md](https://github.com/Zentry-org/.github/main/CONTRIBUTING.md) before submitting a pull request.
+Please check [CONTRIBUTING.md](https://github.com/Zentry-org/.github/blob/main/CONTRIBUTING.md) before submitting a pull request.
 
 ---
 
