@@ -21,7 +21,7 @@ Before contributing, please read these quick rules:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Zentry/.github.git
+git clone https://github.com/Zentry-org/.github.git
 cd zentry-ai-assistant
 ````
 
@@ -87,7 +87,7 @@ git push origin feature/my-cool-feature
 
 ## 🙌 Code of Conduct
 
-All contributors must adhere to our [Code of Conduct](https://github.com/Zentry/.github/blob/main/CODE_OF_CONDUCT.md). We foster a safe, welcoming space.
+All contributors must adhere to our [Code of Conduct](https://github.com/Zentry-org/.github/blob/main/CODE_OF_CONDUCT.md). We foster a safe, welcoming space.
 
 ---
 
