@@ -1,3 +1,4 @@
+
 # 🤖 Zentry AI Assistant
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Zentry/.github)
@@ -10,7 +11,7 @@
 
 ---
 
-### 🧠 What is Zentry AI Assistant?
+## 🧠 What is Zentry AI Assistant?
 
 **Zentry AI Assistant** is a **modular, multilingual, and real-time AI voice assistant** built to power conversational experiences in phone calls, web, or embedded environments. Designed with precision in **speech-to-text (STT), natural language processing (NLP), and dynamic response generation**, Zentry is **privacy-first, open-source**, and tuned for local languages (like Malayalam) and real-world audio conditions.
 
@@ -75,3 +76,69 @@ python setup_model.py
 
 # Start the assistant
 python run_assistant.py
+````
+
+---
+
+## 🔁 Architecture
+
+```text
+[Caller] ↔ [Asterisk] ↔ [Linphone] ↔ [VoiceBot.py]
+                              ↓
+                 [Speech-to-Text (Whisper)]
+                              ↓
+                  [LLM Inference / Phi-3]
+                              ↓
+                 [Text-to-Speech / Playback]
+```
+
+---
+
+## 🧪 Use Cases
+
+* 🎓 College reception desk voice assistant
+* 📞 Automated helpline support
+* 🏥 Healthcare triage voicebot
+* 🌐 Language-specific digital assistants (Malayalam, Tamil, etc.)
+
+---
+
+## 🛤️ Roadmap
+
+* [x] Malayalam STT fine-tuning
+* [x] Asterisk SIP integration
+* [ ] TTS Module (Tortoise or Coqui)
+* [ ] Memory & context-aware responses
+* [ ] Web dashboard to monitor conversations
+* [ ] Deployable on Raspberry Pi / edge devices
+
+---
+
+## 💡 Contributing
+
+We welcome your contributions!
+
+```bash
+# Fork the repo, make changes and submit a PR 🚀
+```
+
+Please check [CONTRIBUTING.md](https://github.com/Zentry/.github/blob/main/CONTRIBUTING.md) before submitting a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌐 Connect with Us
+
+* Organization: [Zentry](https://github.com/Zentry)
+* Lead Developer: [Habel Shaji](https://github.com/habelshaji)
+* Questions or Ideas? [Start a Discussion](https://github.com/Zentry/.github/discussions)
+
+---
+
+> *"The future of voice is local, inclusive, and intelligent. Let's build it together."* – Team Zentry
+
