@@ -134,7 +134,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🌐 Connect with Us
 
 * Organization: [Zentry](https://github.com/Zentry)
-* Lead Developer: [Habel Shaji](https://github.com/habelshaji)
+* Developers: [Habel Shaji](https://github.com/Habel2005) | [Lino Tom](https://github.com/LinoTom)
 * Questions or Ideas? [Start a Discussion](https://github.com/Zentry/.github/discussions)
 
 ---
