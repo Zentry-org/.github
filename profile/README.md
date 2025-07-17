@@ -1,10 +1,10 @@
 # 🤖 Zentry AI Assistant
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Zentry/.github)
-![GitHub contributors](https://img.shields.io/github/contributors/Zentry/.github)
-![GitHub last commit](https://img.shields.io/github/last-commit/Zentry/.github)
-![Issues](https://img.shields.io/github/issues/Zentry/.github)
-![License](https://img.shields.io/github/license/Zentry/.github)
+![GitHub repo size](https://img.shields.io/github/repo-size/Zentry-org/.github)
+![GitHub contributors](https://img.shields.io/github/contributors/Zentry-org/.github)
+![GitHub last commit](https://img.shields.io/github/last-commit/Zentry-org/.github)
+![Issues](https://img.shields.io/github/issues/Zentry-org/.github)
+![License](https://img.shields.io/github/license/Zentry-org/.github)
 
 > 🚀 An open-source, real-time AI Voice Assistant for intelligent, human-like conversations – built to serve institutions, automate tasks, and adapt to your context.
 
@@ -61,7 +61,7 @@
 ### 🖥️ Local Setup
 
 ```bash
-git clone https://github.com/Zentry/.github.git
+git clone https://github.com/Zentry-org/.github.git
 cd zentry-ai-assistant
 
 # Create a virtual environment
@@ -121,7 +121,7 @@ We welcome your contributions!
 # Fork the repo, make changes and submit a PR 🚀
 ```
 
-Please check [CONTRIBUTING.md](https://github.com/Zentry/.github/blob/main/CONTRIBUTING.md) before submitting a pull request.
+Please check [CONTRIBUTING.md](https://github.com/Zentry-org/.github/main/CONTRIBUTING.md) before submitting a pull request.
 
 ---
 
@@ -133,9 +133,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌐 Connect with Us
 
-* Organization: [Zentry](https://github.com/Zentry)
+* Organization: [Zentry](https://github.com/Zentry-org)
 * Developers: [Habel Shaji](https://github.com/Habel2005) | [Lino Tom](https://github.com/LinoTom)
-* Questions or Ideas? [Start a Discussion](https://github.com/Zentry/.github/discussions)
+* Questions or Ideas? [Start a Discussion](https://github.com/Zentry-org/.github/discussions)
 
 ---
 
