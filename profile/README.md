@@ -133,7 +133,7 @@ MIT License – see [LICENSE](LICENSE)
 
 * Organization: [Zentry](https://github.com/Zentry-org)
 * Developers: [Habel Shaji](https://github.com/Habel2005) | [Lino Tom](https://github.com/LinoTom)
-* Still Doubt?: Some DevNotes [Notion](https://ruddy-manchego-5eb.notion.site/Zentry-Ai-24f8e847267180a18c3dd96f3b8d59f9?source=copy_link)
+* Still Doubt?: Some DevNotes [Notion](https://ruddy-manchego-5eb.notion.site/Zentry-Ai-24f8e847267180a18c3dd96f3b8d59f9)
 
 ---
 
