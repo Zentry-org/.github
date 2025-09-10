@@ -1,3 +1,6 @@
+
+---
+
 # 🤖 Zentry AI Assistant
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Zentry-org/.github)
@@ -10,39 +13,37 @@
 
 ---
 
-## 🧠 What is Zentry AI Assistant?
+## 📝 Abstract
 
-**Zentry AI Assistant** is a **modular, multilingual, and real-time AI voice assistant** built to power conversational experiences in phone calls, web, or embedded environments. Designed with precision in **speech-to-text (STT), natural language processing (NLP), and dynamic response generation**, Zentry is **privacy-first, open-source**, and tuned for local languages (like Malayalam) and real-world audio conditions.
+**Zentry AI Assistant** is a **modular and real-time voice AI system** designed for **telephony and institutional automation**. It combines **high-accuracy speech-to-text (STT)**, **reasoning with lightweight LLMs**, and **natural speech synthesis (TTS)** to create seamless human-like conversations in local languages.
+
+Built around **FreeSWITCH** for call control, **CTranslate2-optimized Whisper** for efficient transcription, and **Phi-3 Mini with RAG** for factual reasoning, Zentry emphasizes **speed, accuracy, and locality**. The assistant is extendable with **Meta MMS multilingual models** for broader language coverage, enabling use in education, healthcare, and enterprise environments.
 
 ---
 
 ## ✨ Key Features
 
-- 🎙️ **High-accuracy STT (Malayalam + English)** using fine-tuned Whisper-medium
-- 🧩 **Pluggable NLU modules** (Open-source LLMs: Phi-3, Mistral, or custom)
-- ☎️ **Call integration with FreeSwitch & Linphone**
-- 💬 **Real-time response generation**
-- 📦 Lightweight + runs locally
-- 🌐 API-first design for integration
+* 🎙️ **STT (Malayalam + English)** using **Whisper-medium CTranslate2**
+* 🧩 **Reasoning & RAG** with **Phi-3 Mini** (low-latency + factual)
+* 🌐 **Multilingual extension** via **Meta MMS** speech models
+* ☎️ **FreeSWITCH SIP integration** for call routing + telephony
+* 💬 **Dynamic response generation**
+* 📦 **Lightweight + fully local** (edge-device deployable)
+* 🔌 **API-first** for easy integration with external systems
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component        | Tech / Tool                                |
-|------------------|---------------------------------------------|
-| Speech-to-Text   | Whisper-medium (CTranslate2)                |
-| NLP / Reasoning  | Phi-3 / Mistral / LLaMA / OpenRouter        |
-| Voice I/O        | Asterisk + Linphone SIP                     |
-| Backend          | Python (FastAPI), Flask (optional)          |
-| Orchestration    | Docker, Supervisor                          |
-| Real-Time Engine | WebSocket + Event Loop (asyncio)            |
-
----
-
-## 📷 Demo (Coming Soon)
-
-> Stay tuned for a complete video walkthrough and demo calls with Zentry AI in action.
+| Component        | Tech / Tool                                  |
+| ---------------- | -------------------------------------------- |
+| Speech-to-Text   | Whisper-medium (CTranslate2 runtime)         |
+| NLP / Reasoning  | Phi-3 Mini + RAG pipeline                    |
+| Multilingual STT | Meta MMS (Vineel’s fine-tuned speech models) |
+| Voice I/O        | FreeSWITCH + Linphone SIP                    |
+| Backend          | Python (FastAPI / Flask optional)            |
+| Orchestration    | Docker, Supervisor                           |
+| Real-Time Engine | Asyncio + WebSockets                         |
 
 ---
 
@@ -50,15 +51,11 @@
 
 ### 🔧 Prerequisites
 
-- Python 3.9+
-- FFmpeg
-- `ct2-transformers` + Whisper model
-- Asterisk server running
-- `linphonec` or VoIP client
-
----
-
-### 🖥️ Local Setup
+* Python 3.9+
+* FFmpeg
+* CTranslate2 + Whisper model
+* FreeSWITCH running with SIP endpoints
+* `linphonec` or any SIP client
 
 ```bash
 git clone https://github.com/Zentry-org/.github.git
@@ -70,25 +67,25 @@ python3 -m venv venv && source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Download STT model (CTranslate2 Whisper)
+# Download and optimize Whisper model
 python setup_model.py
 
 # Start the assistant
 python run_assistant.py
-````
+```
 
 ---
 
 ## 🔁 Architecture
 
 ```text
-[Caller] ↔ [Asterisk] ↔ [Linphone] ↔ [VoiceBot.py]
-                              ↓
-                 [Speech-to-Text (Whisper)]
-                              ↓
-                  [LLM Inference / Phi-3]
-                              ↓
-                 [Text-to-Speech / Playback]
+[Caller] ↔ [FreeSWITCH] ↔ [Linphone] ↔ [VoiceBot.py]
+                               ↓
+                 [STT: Whisper (CTranslate2)]
+                               ↓
+            [LLM: Phi-3 Mini + Retrieval (RAG)]
+                               ↓
+             [TTS / Playback with future module]
 ```
 
 ---
@@ -98,18 +95,19 @@ python run_assistant.py
 * 🎓 College reception desk voice assistant
 * 📞 Automated helpline support
 * 🏥 Healthcare triage voicebot
-* 🌐 Language-specific digital assistants (Malayalam, Tamil, etc.)
+* 🌐 Local-language assistants (Malayalam, Tamil, Hindi, etc.)
 
 ---
 
 ## 🛤️ Roadmap
 
-* [x] Malayalam STT fine-tuning
-* [x] Asterisk SIP integration
-* [ ] TTS Module (Tortoise or Coqui)
-* [ ] Memory & context-aware responses
-* [ ] Web dashboard to monitor conversations
-* [ ] Deployable on Raspberry Pi / edge devices
+* [x] STT with Whisper (CTranslate2 optimized)
+* [x] FreeSWITCH SIP integration
+* [ ] MMS Meta integration for multilingual STT
+* [ ] TTS Module (Indic-TTS / Coqui extension)
+* [ ] Phi-3 Mini RAG optimization for factual answers
+* [ ] Conversation monitoring dashboard
+* [ ] Deployable builds for Raspberry Pi / edge
 
 ---
 
@@ -118,16 +116,16 @@ python run_assistant.py
 We welcome your contributions!
 
 ```bash
-# Fork the repo, make changes and submit a PR 🚀
+# Fork the repo, make changes, and submit a PR 🚀
 ```
 
-Please check [CONTRIBUTING.md](https://github.com/Zentry-org/.github/blob/main/CONTRIBUTING.md) before submitting a pull request.
+Check [CONTRIBUTING.md](https://github.com/Zentry-org/.github/blob/main/CONTRIBUTING.md) before submitting.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License – see [LICENSE](LICENSE)
 
 ---
 
@@ -135,8 +133,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 * Organization: [Zentry](https://github.com/Zentry-org)
 * Developers: [Habel Shaji](https://github.com/Habel2005) | [Lino Tom](https://github.com/LinoTom)
-* Questions or Ideas? [Start a Discussion](https://github.com/Zentry-org/.github/discussions)
+* Still Doubt?: Some DevNotes [Notion](https://ruddy-manchego-5eb.notion.site/Zentry-Ai-24f8e847267180a18c3dd96f3b8d59f9?source=copy_link)
 
 ---
 
 > *"The future of voice is local, inclusive, and intelligent. Let's build it together."* – Team Zentry
+
+---
+
+Do you want me to also add a **Demo / Benchmark section** (with response time goals like <2s, WER numbers for Malayalam STT) so people see your project’s performance metrics?
