@@ -20,7 +20,7 @@
 
 - 🎙️ **High-accuracy STT (Malayalam + English)** using fine-tuned Whisper-medium
 - 🧩 **Pluggable NLU modules** (Open-source LLMs: Phi-3, Mistral, or custom)
-- ☎️ **Call integration with Asterisk & Linphone**
+- ☎️ **Call integration with FreeSwitch & Linphone**
 - 💬 **Real-time response generation**
 - 📦 Lightweight + runs locally
 - 🌐 API-first design for integration
